@@ -8,16 +8,17 @@ export default function Portfolio() {
   const fullText = "hi i'm eunice :)";
 
   const heroImages = [
-    "/images/2025-09-30 18.39.31.jpg",
-    "/images/2025-09-30 18.40.03.jpg",
-    "/images/2025-09-30 18.40.06.jpg",
-    "/images/2025-09-30 18.40.39.jpg",
-    "/images/2025-09-30 18.40.45.jpg",
-    "/images/2025-09-30 18.40.56.jpg",
-    "/images/2025-09-30 18.41.01.jpg",
-    "/images/2025-09-30 18.41.07.jpg",
-    "/images/2025-09-30 18.42.42.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-39-31.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-03.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-06.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-39.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-45.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-56.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-41-01.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-41-07.jpg",
+    process.env.PUBLIC_URL + "/images/2025-09-30-18-42-42.jpg",
   ];
+
 
   useEffect(() => {
     let index = 0;
@@ -48,8 +49,8 @@ export default function Portfolio() {
       description: 'Maritime operations management platform for both client and internal stakeholders',
       tags: ['React', 'Node.js', 'Firebase', 'AWS'],
       link: 'https://github.com/angyonghaseyo/pmis_external',
-      poster: '/images/FSK8.gif',
-      posterFull: '/images/Portconnect.jpg',
+      poster: process.env.PUBLIC_URL + '/images/FSK8.gif',
+      posterFull: process.env.PUBLIC_URL + '/images/Portconnect.jpg',
       icon: <Ship size={24} />
     },
     {
@@ -57,7 +58,8 @@ export default function Portfolio() {
       description: 'Taiwan trip planner passion project made during my exchange in Taiwan',
       tags: ['Next.js', 'Stripe', 'Tailwind'],
       link: '#',
-      poster: '/images/Beach Vacation.gif',
+      poster: process.env.PUBLIC_URL + '/images/beach-vacation.gif',
+      posterFull: process.env.PUBLIC_URL + '/images/taiwan-planner.jpg',
       icon: <Plane size={24} />
     },
     {
@@ -65,7 +67,8 @@ export default function Portfolio() {
       description: 'Real-time event management website',
       tags: ['React', 'TypeScript', 'HTML', 'CSS'],
       link: '#',
-      poster: '/images/Event venue.gif',
+      poster: process.env.PUBLIC_URL + '/images/event-venue.gif',
+      posterFull: process.env.PUBLIC_URL + '/images/eventhub.jpg',
       icon: <Calendar size={24} />
     }
   ];
