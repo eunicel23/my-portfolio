@@ -8,16 +8,17 @@ export default function Portfolio() {
   const fullText = "hi i'm eunice :)";
 
   const heroImages = [
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-39-31.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-03.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-06.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-39.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-45.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-40-56.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-41-01.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-41-07.jpg",
-    process.env.PUBLIC_URL + "/images/2025-09-30-18-42-42.jpg",
+    process.env.PUBLIC_URL + "/images/snorkel.jpg",
+    process.env.PUBLIC_URL + "/images/vietnam.jpg",
+    process.env.PUBLIC_URL + "/images/annabel.jpg",
+    process.env.PUBLIC_URL + "/images/xlq.jpg",
+    process.env.PUBLIC_URL + "/images/xlq1.jpg",
+    process.env.PUBLIC_URL + "/images/italy.jpg",
+    process.env.PUBLIC_URL + "/images/italy1.jpg",
+    process.env.PUBLIC_URL + "/images/italy2.jpg",
+    process.env.PUBLIC_URL + "/images/arielle.jpg",
   ];
+
 
 
   useEffect(() => {
@@ -56,10 +57,10 @@ export default function Portfolio() {
     {
       title: 'Taiwan Planner',
       description: 'Taiwan trip planner passion project made during my exchange in Taiwan',
-      tags: ['Next.js', 'Stripe', 'Tailwind'],
+      tags: ['Next.js', 'Tailwind'],
       link: '#',
-      poster: process.env.PUBLIC_URL + '/images/beach-vacation.gif',
-      posterFull: process.env.PUBLIC_URL + '/images/taiwan-planner.jpg',
+      poster: process.env.PUBLIC_URL + '/images/beach.gif',
+      posterFull: '#',
       icon: <Plane size={24} />
     },
     {
@@ -67,8 +68,8 @@ export default function Portfolio() {
       description: 'Real-time event management website',
       tags: ['React', 'TypeScript', 'HTML', 'CSS'],
       link: '#',
-      poster: process.env.PUBLIC_URL + '/images/event-venue.gif',
-      posterFull: process.env.PUBLIC_URL + '/images/eventhub.jpg',
+      poster: process.env.PUBLIC_URL + '/images/event.gif',
+      posterFull: '#',
       icon: <Calendar size={24} />
     }
   ];
@@ -459,8 +460,7 @@ export default function Portfolio() {
                     </a>
                   )}
 
-                  {/* Poster Button */}
-                  {project.posterFull && (
+                  {project.posterFull && project.posterFull !== '#' && (
                     <a href={project.posterFull} target="_blank" rel="noopener noreferrer" style={{
                       backgroundColor: 'white',
                       color: '#8b5a2b',
